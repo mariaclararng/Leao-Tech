@@ -1,0 +1,23 @@
+h2{
+    color: blueviolet;
+}
+
+p{
+    font-family:'Courier New', Courier, monospace ;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: darkgray;
+}
+span{
+    border: 2px solid red;
+    
+}
+
+#borda2{
+    border: 5px solid black;
+}
