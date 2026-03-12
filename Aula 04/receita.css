@@ -1,0 +1,18 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-color:darkslategray;
+    font-size: 30px;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 29px;
+}
+
+h3{
+    color: white;
+    background-color: darkslategray;
+    border: 0cap;
+}

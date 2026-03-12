@@ -1,0 +1,44 @@
+body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0px;
+        }
+
+#titulo01{
+    color: darkcyan;
+    border: 8px solid black;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+#titulo02{
+    color: rgb(42, 0, 139);
+    border: 8px solid rgb(84, 88, 88);
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+}
+
+.Fortaleza{
+    background-color:aquamarine;
+    width:25%;
+    height: 50px;
+}
+
+.Metropolitana{
+    background-color: brown;
+    width: 50%;
+    height: 70px;
+}
+
+.Interior{
+    background-color: cornflowerblue;
+    width:75%;
+    height: 66px;
+}
+
+.RN{
+    background-color: darkgrey;
+    width: 80%;
+    height: 25px;
+}
