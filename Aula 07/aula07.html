@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #caixa01{
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        #caixa01:hover{
+            background: linear-gradient(to right, blue, white, black, green
+            );
+            color: white;
+        }
+
+        #formulário{
+            width: 250px;
+            height: 100px;
+            background-color: cadetblue;
+            margin-top: 10px;
+            margin-left: 5px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: -4px -4px 10px blue solid;
+        }
+
+
+        #nome:focus{
+            background-color: black;
+            color: wheat;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="caixa01">
+        <h3>Caixa 01</h3>
+    </div>
+
+    <div id="formulário">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <br><br>
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade"> 
+    </div>
+
+    
+</body>
+</html>
