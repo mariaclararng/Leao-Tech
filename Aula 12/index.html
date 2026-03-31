@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12</title>
+    
+</head>
+<body>
+
+    <!-- <div class="container mt-5">
+        <h1 class="text-center">Cálculo de IMC</h1>
+        <p class="text-center text-muted">Abra o console (F12) ou aguarde o alerta para ver o resultado.</p>
+    </div> -->
+
+    <!-- <script>
+        // incio do meu console 
+        console.log('hello word!');
+
+        /* EXERCÍCIO 01:
+           1. Crie um programa que peça para o usuário digitar o seu peso e altura. 
+           O programa deve calcular o IMC do usuário. IMC = peso / altura²
+        */
+
+        let peso = parseFloat(prompt("Digite seu peso:"));
+        let altura = parseFloat(prompt("Agora, digite sua altura:"));
+
+        // Calculo do IMC
+        let imc = peso / (altura ** 2);
+
+        // Resultado do calculo
+        alert("O seu IMC é: " + imc.toFixed(2));
+        
+        console.log("Peso informado:", peso);
+        console.log("Altura informada:", altura);
+        console.log("IMC calculado:", imc.toFixed(2));
+
+    // Agora aplicamos a sua regra de classificação:
+
+            // 18,5 abaixo do peso
+        if (imc < 18.5) {
+            console.log('Abaixo do peso');
+
+            // 18,5 até 25
+        } else if (imc >= 18.5 && imc < 25) {
+            console.log('Peso normal');
+
+            // 25 até 30
+        } else if (imc >= 25 && imc < 30) {
+            console.log('Sobrepeso');
+        } else {
+
+            // 30 ou mais
+            console.log('Obesidade');
+        }
+    </script> -->
+
+    <script> 
+
+    /* EXERCICIO 02:
+        2. Peça para o usuário digitar 3 notas, calcule a média das notas e mostre na tela.
+        */
+        let nota01 = parseFloat(prompt('Digite o valor 01'));
+        let nota02 = parseFloat(prompt('Digite o valor 02'));
+        let nota03 = parseFloat(prompt('Digite o valor 03'));
+
+        // calculo de notas - resultado
+        let media = (+nota01 + +nota02 + +nota03) / 3;
+        alert("Seu valor é de:" + media.toFixed());
+
+        if(media < 4){
+            console.log('Reprovado');
+        } else if(media < 7){
+            console.log('Recuperação');
+        } else{
+            console.log('Aprovado');
+        }
+
+        
+
+    </script>
+
+    <!-- <script>
+        /* EXERCICIO 03:
+        3. Crie um programa que peça ao usuário uma porcentagem de desconto. Depois peça o preço do produto, depois mostre o valor antes do desconto, o valor do desconto e o preço final do produto. 
+        */
+
+        // let porcentagem = console.log("Qual a porcentagem de desconto?");
+        // porcentagem = parseFloat(porcentagem)
+        // let precoOriginal = coonsole.log("Qual é o preço do produto?");
+        // preço = parseFloat(porcentagem)
+
+        // console.log(`Valor antes do desconto = $ {preco}`)
+        // console.log(`Valor do desconto = $ {preco * p/100}`)
+        // console.log(`Valor final do produto = $ {preco - (preco */100)}`)
+
+    </script> --> 
+<!-- 
+        // EXERCICIOS DESAFIOS 02:
+
+        //   1. Crie um programa que peça para o usuário digitar o seu peso e sua altura. O programa deve calcular o IMC do usuário.
+        imc = peso/altura²
+        Depois de mostrar o IMC classifique em qual situação a pessoa se encontra de acordo com a seguinte tabela:
+        de 18,5 -> Abaixo do peso
+        de 18,5 até 25 -> Peso normal
+        de 25 até 30 -> Sobrepeso
+        de 30 ou mais -> Obesidade  
+
+        // Peça para o usuário digitar 3 notas, calcule a média das notas e mostre na tela
+        Se a média for menor que 4 -> Reprovado
+        Se a média for de 4 até 7 -> Recuperação
+        Se a média for de 7 até 10 -> Aprovado
+
+        // 3. Crie um programa que peça o usário que pode ser 1 - gerente ou vendedor,
+        se for gerente pode aplicar até 50% de desconto, se for vendedor pode aplicar até 30% de desconto. Se o usuário digitar uma porcentagem válida, peça o valor do produto e mostre o preço final. -->
+
+
+
+    <!-- <script> -->
+        <!-- // OPERADODORES DE ATRIBUIÇÃO     
+        
+        // let x = 5
+
+        // x += 3 // x + 3 
+        // console.log(x)
+
+        // x -= 7
+        // console.log(x)
+
+        // x *= 10
+        // console.log(x)
+
+        // x /= 2 
+        // console.log(x)
+
+        // x %= 2
+        // console.log(x)
+
+        // OPERADORES DE COMPARAÇÃO -> true ou false
+
+        // x = 5
+        // let y = 5 
+
+        // // igualdade
+        // console.log( x == y)
+        // // idêntico
+        // console.log( x === y)
+        // // diferente
+        // console.log( x != y)
+
+        // // maior que
+        // console.log( x > y)
+        // // menor que
+        // console.log( x < y)
+        // // maior ou igual
+        // console.log( x >= y)
+        // //menor ou igual 
+        // console.log( x <= y)    
+
+        // CONDICIONAIS 
+
+        // let x = 10;
+
+        // if(x > 10){
+        //     console.log('X é maior que 10');
+        // } else if(x == 10) {
+        //     console.log('X é igual a 10');
+        // } else{
+        //     console.log('X é menor que 10');
+        // } -->
+
+    <!-- </script> -->
+
+
+
+
+</body>
+</html>
