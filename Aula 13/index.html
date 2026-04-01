@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <script>
+        //Peça para o usuário digitar sua idade, se a idade for menor que 12, classifique como criança, se for entre 12 e 18 cini adolescente, de 18 a 60 adulto, maior que 60, idoso
+
+        // let idade = parseInt(prompt('Digite sua idadde'))
+        // if (idade < 12){
+        //     console.log('Classificação: Criança')
+        // }else if(idade < 18){
+        //     console.log('Classificação: Adolescente')
+        // }else if(idade < 60){
+        //     console.log('Classificação: Adulto')
+        // }else{
+        //     console.log('Classificação: Idoso')
+        // }
+
+
+
+
+
+        // faça um programa em JS que valide se uma pessoa pode dirigir para isso ela precisa ter idade maior que 18 anos E ter carteira de motorista.
+
+        // let idade = parseInt(prompt('Digite sua didade'))
+        // let carteira = confirm(prompt('Tem carteira de motorista'))
+        // console.log(idade,carteira)
+
+        // if( idade >=18 && carteira == true){
+        //     console.log("Go!!")
+        // }else{
+        //     console.log("Não pode dirigir!!")
+        // }
+
+        
+        // faça um programa que aplique o desconto de um produto caso a pessoa seja estudante OU professor, se for outra profissão coloque o preço normal. 
+
+        // let profissao = prompt('Digite a profissão')
+
+        // if (profissao == 'Estudante' || profissao == 'Professor'){
+        //     console.log('Você ganhou o desconto')
+        // }else{
+        //     onsole.log('Você não ganhou o desconto')
+        // }
+
+
+        // EXERCICIO 01: 
+        // Verificação de acesso ao cinema: crie um programa que receba idade e se a pessoa tem ingresso. Ela só pode entrar se a idade for maior que 16 anos e tiver ingresso.
+
+        // let idade = parseInt(prompt('Qual a sua idade?'))
+        // let ingresso = confirm('Possui ingresso?')
+        // console.log(idade,ingresso)
+
+        // if( idade >=16 && ingresso){
+        //     console.log('Pode entrar!!')
+        // }else{
+        //     console.log('Entrada não permitida: menor de idade ou sem ingresso.')
+        // }
+        
+
+
+
+        // EXERCICIO 02:
+        // Validação de Login: crie um programa que peça o nome de usuário e senha, se o nome de usuário for "cpf" e senha padrão "abcd1234" diga que ela conseguiu logar se ela errar uma das duas diga "usuário ou senha incorreto" ou "usuário não encontrado".
+
+        let usuarioDigitado = prompt("Digite seu cpf:")
+        let senhaDigitada = prompt("Digite sua senha:")
+
+        if (usuarioDigitado == '12508272485' && senhaDigitada === "abcd1234") {
+            alert("Bem-vindo ao Processo Seletivo do TJCE");
+        } else {
+            alert("Usuário ou senha incorretos.");
+        }
+
+
+
+        // EXERCICIO 03:
+        // Crie um programa que receba o calor de uma compra e se o cliente é VIP. O cliente ganhará frete grátis se a compra for mais de 1000 ou se for VIP.
+
+
+        // EXERCICIO 04:
+        // Crie um programa que receba se o usuário digitou senha correta. Se a senha não estiver correta, mostrar "Acesso negado".
+
+
+    </script>
+
+    
+</body>
+</html>
