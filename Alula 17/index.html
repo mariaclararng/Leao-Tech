@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 17</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <script>
+      let cadastros = [
+        {
+          nome: "Maria",
+          telefone: "8534216519",
+          cidade: "Fortaleza",
+          profissao: "Desenvolvedora",
+        },
+        {
+          nome: "Ana",
+          telefone: "8534216523",
+          cidade: "Naracanaú",
+          profissao: "Assistente Técnica",
+        },
+      ];
+
+      let opcao = "";
+
+      while (opcao != "3") {
+        opcao = prompt("1 - Cadastrar\n2 - Listar\n3 - Sair");
+        switch (opcao) {
+          case "1":
+            console.log("Cadastro");
+            let cadastro = {}
+            cadastro.nome = prompt('Digite o nome')
+            cadastro.telefone = prompt('Digite o telefone')
+            cadastro.cidade = prompt('Digite a cidade')
+            cadastro.profissao = prompt('Digite a profissao')
+
+            cadastros.push(cadastro)
+            break;
+
+          case "2":
+            console.log("Listar os cadastros");
+            for(let i = 0; i < cadastros.length; i++) {
+                console.log()
+            }
+
+
+            break;
+          case "3":
+            console.log("Saindo...");
+            default:
+                console.log('Opção Inválida')
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
