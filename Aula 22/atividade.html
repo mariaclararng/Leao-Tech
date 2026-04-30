@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade</title>
+    <img src="atividade.css" alt="" />
+  </head>
+
+  <body>
+    <div class="container mt-5" style="max-width: 500px">
+      <div class="card shadow-sm p-4">
+        <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif;" class="text-center mb-3">Busca de Produtos (FakeStore)</h4>
+
+        <div class="input-group mb-3">
+          <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif;" class="text mb-3">Digite o ID:</h4>
+
+          <input type="number" id="idProduto" class="form-control" />
+          <button style=" font-family: Verdana, Geneva, Tahoma, sans-serif; border-radius: 20px; background-color: #88b2c7"
+            class="btn btn-primary" onclick="buscarProduto()">Buscar</button>
+
+        </div>
+
+        <div id="resultado" class="mt-4" style="display: none">
+          <div class="card border-0 bg-light">
+            <img
+              id="prodImagem"
+              class="card-img-top p-3"
+              style="max-height: 200px; object-fit: contain"
+            />
+            <div class="card-body">
+              <h5 id="prodTitulo" class="fw-bold"></h5>
+              <p id="prodDescricao" class="text-muted small"></p>
+              <h4 id="prodPreco" class="text-success"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      async function buscarProduto() {
+        const id = document.getElementById("idProduto").value;
+        const url = `https://fakestoreapi.com/products/${id}`;
+
+        try {
+          const resposta = await fetch(url);
+          const produto = await resposta.json();
+
+          if (produto) {
+            document.getElementById("prodTitulo").innerText = produto.title;
+            document.getElementById("prodDescricao").innerText =
+              produto.description;
+            document.getElementById("prodPreco").innerText =
+              `R$ ${produto.price.toFixed(2)}`;
+            document.getElementById("prodImagem").src = produto.image;
+
+            document.getElementById("resultado").style.display = "block";
+          }
+        } catch (erro) {
+          alert("Erro ao buscar o produto. Verifique o ID!");
+          console.error("Erro na API:", erro);
+        }
+      }
+    </script>
+  </body>
+</html>
