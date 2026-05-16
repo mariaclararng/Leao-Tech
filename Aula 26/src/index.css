@@ -1,0 +1,15 @@
+img{
+    width: 100px;
+    height: 90px;
+    border-style:groove;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div{
+    background-color:darkslategrey;
+}
+
+#titulo{
+   color: white;
+   transform:rotateX('angle')
+}

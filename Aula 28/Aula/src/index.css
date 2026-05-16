@@ -1,0 +1,20 @@
+img{
+    width: 100px;
+    height: px;
+    border-style:groove;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div{
+    background-color:rgb(66, 126, 126);
+}
+
+#titulo{
+   color: rgb(252, 246, 246);
+   transform:rotateX('angle')
+}
+
+#container-btn a{
+    color:rgb(253, 248, 248);
+
+}
