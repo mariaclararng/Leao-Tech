@@ -130,13 +130,13 @@ const Cadastro = () => {
                 <div className="form-check">
                   <input className="form-check-input" type="checkbox" id="gridCheck"/>
                   <label className="form-check-label" htmlFor="gridCheck">
-                    Check me out
+                    Check-me out
                   </label>
                 </div>
               </div>
 
               <div className="col-12">
-                <button type="submit" className="btn btn-primary">Sign in</button>
+                <button type="submit" className="btn btn-primary">Sing In</button>
               </div>
             </form>
           </div>
